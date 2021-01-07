@@ -355,7 +355,7 @@ input[type="submit"]:hover {
 .contact-area {
   padding: 10%;
 
-  background-color: rgb(153, 231, 255);
+  background-color: rgba(140, 218, 241, 0.521);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
