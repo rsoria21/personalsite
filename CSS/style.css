@@ -194,6 +194,50 @@ body {
   padding-bottom: 5rem;
 }
 
+/* start */
+
+.project-container {
+  position: relative;
+}
+
+.project-image {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #2d3a3be0;
+}
+
+.project-container:hover .project-overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 15px;
+  position: relative;
+  padding: 0 1rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* end */
+
 @media screen and (max-width: 600px) {
   .project-text {
     padding: 0 10px 20px 10px;
