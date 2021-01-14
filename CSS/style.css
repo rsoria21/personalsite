@@ -170,7 +170,7 @@ body {
 @media (max-width: 600px) {
   .about-row {
     flex-direction: column;
-    padding: 10rem 5rem;
+    padding: 5rem 2.5rem;
     justify-content: center;
   }
   .about-text {
