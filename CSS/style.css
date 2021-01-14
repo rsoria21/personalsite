@@ -173,6 +173,12 @@ body {
     padding: 5rem 2.5rem;
     justify-content: center;
   }
+
+  .about-column {
+    margin: 0;
+    padding: 0;
+  }
+
   .about-text {
     padding-left: 3rem;
     font-size: 1.3rem;
