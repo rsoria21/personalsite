@@ -44,7 +44,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .navbar a:not(:first-child) {
     display: none;
   }
@@ -57,7 +57,7 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .navbar.responsive {
     position: relative;
   }
@@ -117,7 +117,7 @@ body {
   width: 15%;
   margin: 20px 20px 50px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .mySlides {
     margin-top: 10rem;
   }
@@ -167,7 +167,7 @@ body {
   height: auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .about-row {
     flex-direction: column;
     padding: 5rem 2.5rem;
@@ -205,6 +205,10 @@ body {
   font-size: 2rem;
   color: rgb(255, 255, 255);
   padding-bottom: 5rem;
+}
+
+.project-skill {
+  margin-bottom: 30px;
 }
 
 /* start */
@@ -251,7 +255,7 @@ body {
 
 /* end */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .project-text {
     padding: 0 10px 20px 10px;
   }
@@ -283,7 +287,7 @@ body {
 }
 
 /* Responsive columns */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .column {
     width: 100%;
     display: block;
@@ -294,12 +298,13 @@ body {
 /* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  /* padding: 16px; */
+  padding: 2rem;
   text-align: center;
   background-color: #f1f1f1;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .project-row {
     flex-direction: column;
   }
@@ -381,7 +386,7 @@ input[type="submit"]:hover {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .col-25,
   .col-75,
   input[type="submit"] {
@@ -390,7 +395,7 @@ input[type="submit"]:hover {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .contact-row {
     flex-direction: column;
   }
@@ -451,11 +456,13 @@ input[type="submit"]:hover {
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .default {
   border-color: #ebebeb;
   color: #ebebeb;
+  margin: 0 5px;
 }
 
 .default:hover {
@@ -465,6 +472,8 @@ input[type="submit"]:hover {
 /* project buttons */
 
 .project-btn {
+  /* display: flex;
+  flex-direction: column; */
   border-color: #242424;
   color: #242424;
 }
