@@ -31,7 +31,7 @@ body {
 }
 
 .navbar a:hover {
-  background-color: #ddd;
+  background-color: #004ba079;
   color: black;
 }
 
@@ -78,7 +78,7 @@ body {
 /* header */
 
 .header-img {
-  background-image: url(/images/mainbackground.jpg);
+  background-image: url(/images/white-bunch-dots.jpg);
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -120,6 +120,9 @@ body {
 @media screen and (max-width: 700px) {
   .mySlides {
     margin-top: 10rem;
+  }
+  .skill-image {
+    width: 50%;
   }
 }
 /* end of skills */
@@ -447,6 +450,7 @@ input[type="submit"]:hover {
 /* text color */
 .light-text {
   color: #ebebeb;
+  text-shadow: 0 0 2px #011520;
 }
 /* buttons */
 .btn {
@@ -461,19 +465,19 @@ input[type="submit"]:hover {
 
 .default {
   border-color: #ebebeb;
+  text-shadow: 0 0 2px #011520;
   color: #ebebeb;
+  background: #006da079;
   margin: 0 5px;
 }
 
 .default:hover {
-  border-color: #ebebeb;
-  background: #006da079;
+  border-color: #004ba079;
+  background: #004ba079;
 }
 /* project buttons */
 
 .project-btn {
-  display: flex;
-  flex-direction: column;
   margin: 4px;
   border-color: #242424;
   color: #242424;
