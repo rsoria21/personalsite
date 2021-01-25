@@ -80,6 +80,7 @@ body {
 .header-img {
   background-image: url(/images/mainbackground.jpg);
   height: 100%;
+  width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -472,8 +473,9 @@ input[type="submit"]:hover {
 /* project buttons */
 
 .project-btn {
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
+  margin: 4px;
   border-color: #242424;
   color: #242424;
 }
