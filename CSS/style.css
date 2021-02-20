@@ -323,8 +323,8 @@ body {
 /* contact */
 
 .contact-header {
-  font-size: 2rem;
-  padding-bottom: 2rem;
+  font-size: 4rem;
+
   font-family: "Roboto Slab", serif;
   color: #ebebeb;
 }
@@ -440,6 +440,7 @@ input[type="submit"]:hover {
 
 .contact-name {
   font-size: 2rem;
+  margin-bottom: 2rem;
   color: #ebebeb;
   font-family: "Roboto Slab", serif;
 }
@@ -497,5 +498,12 @@ input[type="submit"]:hover {
 }
 
 .project-btn:hover {
-  border-color: #242424;
+  border-color: #004ba079;
+  background-color: #004ba079;
+}
+
+/* contact button */
+
+.contact-btn {
+  font-size: 2rem;
 }
