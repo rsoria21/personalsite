@@ -78,12 +78,25 @@ body {
 /* header */
 
 .header-img {
-  background-image: url(/images/clouds-sun.jpg);
+  /* background-image: url(/images/clouds-sun.jpg);
   height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  background: grey;
+  background-image: radial-gradient(#006da079, #2b2b2b, #414141);
+  background-size: 400%;
+  animation: bg-animation 15s infinite alternate;
+  /* background: linear-gradient(to right, #141414, #2b2b2b, #414141); */
+}
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
 /* skills */
@@ -92,6 +105,7 @@ body {
   display: none;
 
   padding: 5rem 6rem;
+  background: rgb(216, 216, 216);
 }
 
 .skill-text {
@@ -111,6 +125,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background: rgb(216, 216, 216);
 }
 
 .skill-logo {
@@ -310,7 +325,7 @@ body {
   /* padding: 16px; */
   padding: 2rem;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: rgb(216, 216, 216);
 }
 
 @media (max-width: 700px) {
@@ -451,6 +466,12 @@ input[type="submit"]:hover {
 }
 
 /* end of contact */
+
+/* Footer */
+footer {
+  background: rgb(216, 216, 216);
+}
+/* End of Footer */
 
 /* texts */
 .big-heading {
