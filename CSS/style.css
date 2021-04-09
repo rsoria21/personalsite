@@ -155,7 +155,7 @@ body {
   align-items: center;
   flex: 50%;
   /* padding: 10px; */
-  height: 600px;
+  /* height: 600px; */
 }
 
 .about-column-text {
@@ -165,7 +165,7 @@ body {
   align-items: center;
   flex: 50%;
   padding: 10px 50px 0 0;
-  height: 600px;
+  /* height: 600px; */
 }
 
 .about-text {
