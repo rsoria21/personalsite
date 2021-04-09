@@ -169,6 +169,10 @@ body {
 }
 
 .about-text {
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
   font-size: 1.75rem;
   line-height: 2.2rem;
   font-family: "Roboto Slab", serif;
@@ -185,6 +189,10 @@ body {
 }
 
 @media (max-width: 700px) {
+  .about-column-text {
+    /* padding: 10px 50px 0 0; */
+    padding: 0;
+  }
   .about-row {
     flex-direction: column;
     padding: 5rem 2.5rem;
