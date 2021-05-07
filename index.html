@@ -28,6 +28,8 @@
       rel="stylesheet"
     />
     <title>San Antonio Web Developer</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
   </head>
   <body>
     <!-- header -->
@@ -38,12 +40,14 @@
               <i class="fa fa-bars"></i>
             </a> -->
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
       </div>
-      <h1 class="big-heading light-text">I'm Ricardo <br />A Web Developer</h1>
-      <a class="btn default" href="#projects"> PROJECTS </a>
-      <a class="btn default" href="#contact">CONTACT</a>
+      <h1 class="big-heading light-text fade-in-text">
+        I'm Ricardo <br />A Web Developer
+      </h1>
+      <a class="btn default animate-top" href="#portfolio">Portfolio</a>
+      <a class="btn default animate-top" href="#contact">CONTACT</a>
     </div>
 
     <!-- Skills Start -->
@@ -68,7 +72,7 @@
       <div class="mySlides fade">
         <img class="skill-image" src="/images/python.png" />
         <div class="text">
-          Hey check it out, I aslo know some Python! And currently playing with
+          Hey check it out I also know some Python, and currently playing with
           it's many libraries.
         </div>
       </div>
@@ -76,7 +80,7 @@
       <div class="mySlides fade">
         <img class="skill-image" src="/images/react-logo.png" />
         <div class="text">
-          Oh yes, I aslo know some React. It really helps with creating
+          Oh yes, I also know some React. It really helps with creating
           interactive UIs.
         </div>
       </div>
@@ -141,7 +145,7 @@
 
     <!-- Projects -->
     <!-- Start of Tabs -->
-    <ul class="tabs">
+    <ul id="portfolio" class="tabs">
       <li data-tab-target="#sites" class="active tab">Websites</li>
       <li data-tab-target="#other-work" class="tab">Projects</li>
     </ul>
@@ -201,39 +205,29 @@
               <div class="card">
                 <div class="project-container">
                   <img
-                    src="/images/eaguns copy.png"
-                    alt="EAgunstx"
+                    src="/images/fernandoG.png"
+                    alt="Image of Fernandogamino.com"
                     class="project-image"
                   />
                   <div class="project-overlay">
                     <div class="overlay-text">
-                      This website showcases many guns and knives, and continues
-                      to grow. Website set up with contact form and SEO
-                      implementation.
+                      This website was created for a local San Antonio resident
+                      wanting a place for all social media.
                     </div>
                   </div>
                 </div>
-                <h3>EAgunstx</h3>
-                <p class="project-skill">PHP Wordpress YoastSeo</p>
-
+                <h3>Fernando Gamino</h3>
+                <p class="project-skill">HTML CSS Javascript</p>
                 <div class="btn-container">
                   <a
                     class="btn project-btn"
-                    href="https://eagunstx.com"
+                    href="https://fernandogamino.com"
                     target="_blank"
                   >
-                    View Website
+                    Website
                   </a>
-                  <!-- <a class="btn project-btn" href="#"> Code </a> -->
+                  <a class="btn project-btn" href="#"> Code </a>
                 </div>
-
-                <!-- <a
-                  class="btn project-btn"
-                  href="https://eagunstx.com"
-                  target="_blank"
-                >
-                  View Website
-                </a> -->
               </div>
             </div>
 
@@ -293,39 +287,30 @@
               <div class="card">
                 <div class="project-container">
                   <img
-                    src="/images/fernandoG.png"
-                    alt="Image of Fernandogamino.com"
+                    src="/images/eaguns copy.png"
+                    alt="EAgunstx"
                     class="project-image"
                   />
                   <div class="project-overlay">
                     <div class="overlay-text">
-                      This website was created for a local San Antonio resident
-                      wanting a place for all social media.
+                      This website showcases many guns and knives, and continues
+                      to grow. Website set up with contact form and SEO
+                      implementation.
                     </div>
                   </div>
                 </div>
-                <h3>Fernando Gamino</h3>
-                <p class="project-skill">HTML CSS Javascript</p>
+                <h3>EAgunstx</h3>
+                <p class="project-skill">PHP Wordpress YoastSeo</p>
+
                 <div class="btn-container">
                   <a
                     class="btn project-btn"
-                    href="https://fernandogamino.com"
+                    href="https://eagunstx.com"
                     target="_blank"
                   >
-                    Website
+                    View Website
                   </a>
-                  <a class="btn project-btn" href="#"> Code </a>
                 </div>
-                <!-- <a
-                  class="btn project-btn"
-                  href="https://fernandogamino.com"
-                  target="_blank"
-                >
-                  View Website
-                </a> -->
-                <!-- <a href="">
-                          <button class="btn default project-btn">Source Code</button>
-                        </a> -->
               </div>
             </div>
 
@@ -380,7 +365,7 @@
                   <div class="project-overlay">
                     <div class="overlay-text">
                       This website was created for a bakery ready that was ready
-                      for online precence.
+                      for online presence.
                     </div>
                   </div>
                 </div>
@@ -435,7 +420,11 @@
                   >
                     Code
                   </a>
-                  <a class="btn project-btn" href="/Dice Game/dicee.html">
+                  <a
+                    class="btn project-btn"
+                    href="/Dice Game/dicee.html"
+                    target="_blank"
+                  >
                     Demo
                   </a>
                 </div>
@@ -475,7 +464,11 @@
                   >
                     Code
                   </a>
-                  <a class="btn project-btn" href="/Drum-Set/index.html">
+                  <a
+                    class="btn project-btn"
+                    href="/Drum-Set/index.html"
+                    target="_blank"
+                  >
                     Demo
                   </a>
                 </div>
@@ -500,7 +493,7 @@
                 </div>
 
                 <h3>To Do List</h3>
-                <p class="project-skill">HTML CSS Javascript</p>
+                <p class="project-skill">HTML CSS Javascript MongoDB</p>
                 <!-- <a
                       class="btn project-btn"
                       href="https://radiant-mesa-77114.herokuapp.com/"
