@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/contactForm2/styles.css" />
     <!-- JQuery -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.js"
@@ -12,26 +12,65 @@
       crossorigin="anonymous"
     ></script>
     <!-- Script -->
-    <script src="/script.js"></script>
+    <script src="/contactForm2/script.js"></script>
     <title>contact form</title>
   </head>
   <body>
-    <h1>Contact Me</h1>
-    <form action="https://formspree.io/f/xnqlpvol" method="POST">
-      <label>
-        Email
-        <input type="email" name="email" class="email" />
-      </label>
-      <label>
-        Subject
-        <input type="text" name="subject" class="subject" />
-      </label>
-      <label>
-        Message
-        <textarea name="message" class="message"></textarea>
-      </label>
-      <div class="status"></div>
-      <button type="submit" class="submit">Send</button>
-    </form>
+    <div class="navbar" id="myTopnav">
+      <a class="logo" href="/index.html">Home</a>
+      <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a> -->
+      <a href="/index.html#about">About</a>
+      <a href="/index.html#portfolio">Portfolio</a>
+      <a href="#">Contact</a>
+    </div>
+    <section class="container">
+      <div class="contact-section">
+        <div class="contact-title">
+          <h1>Say Hello</h1>
+          <h2>I'm here to help</h2>
+        </div>
+
+        <div class="contact-form">
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/xnqlpvol"
+            method="POST"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              class="email form-control"
+            />
+            <br />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Your Name"
+              class="subject form-control"
+            />
+            <br />
+
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows="4"
+              class="message form-control"
+            ></textarea>
+            <br />
+
+            <div class="status"></div>
+            <!-- <button type="submit" class="submit form-control">Send</button> -->
+            <input
+              type="submit"
+              class="form-control submit"
+              value="SEND MESSAGE"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
