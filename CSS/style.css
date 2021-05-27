@@ -107,11 +107,11 @@ body {
 }
 
 .fade-in-text {
-  animation: fadeIn linear 2s;
-  -webkit-animation: fadeIn linear 2s;
-  -moz-animation: fadeIn linear 2s;
-  -o-animation: fadeIn linear 2s;
-  -ms-animation: fadeIn linear 2s;
+  animation: fadeIn linear 2.5s;
+  -webkit-animation: fadeIn linear 2.5s;
+  -moz-animation: fadeIn linear 2.5s;
+  -o-animation: fadeIn linear 2.5s;
+  -ms-animation: fadeIn linear 2.5s;
 }
 
 @keyframes fadeIn {
@@ -312,7 +312,6 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #006da079;
   padding: 5rem 0;
 }
 
@@ -321,8 +320,6 @@ body {
   justify-content: center;
   align-items: center;
   flex: 50%;
-  /* padding: 10px; */
-  /* height: 600px; */
 }
 
 .about-column-text {
@@ -332,7 +329,6 @@ body {
   align-items: center;
   flex: 50%;
   padding: 10px 50px 0 0;
-  /* height: 600px; */
 }
 
 .about-text {
@@ -357,7 +353,6 @@ body {
 
 @media (max-width: 700px) {
   .about-column-text {
-    /* padding: 10px 50px 0 0; */
     padding: 0;
   }
   .about-row {
@@ -628,14 +623,17 @@ footer {
 
 /* texts */
 .big-heading {
-  font-size: 4rem;
+  font-size: 4.5rem;
   padding-bottom: 4rem;
 }
 /* containers */
 .container {
   padding: 100px 0 250px 0;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
+  .big-heading {
+    font-size: 3rem;
+  }
   .container {
     padding: 100px 0 250px 0;
   }
