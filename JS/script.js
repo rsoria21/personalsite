@@ -37,6 +37,15 @@
 //   x[slideIndex - 1].style.display = "block";
 //   setTimeout(carousel, 3000);
 // }
+
+// Preload Start
+// Preload fade
+$(window).on("load", function () {
+  $(".loader-wrapper").fadeOut("slow");
+});
+
+// Preload End
+
 // Skills carousel Start
 var slideIndex = 1;
 showSlides(slideIndex);

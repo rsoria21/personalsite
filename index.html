@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Here to help with your website with HTML, CSS, and Javascript. Let's get started on your next project together."
+      content="Web Developer here to help with your website. I can assit with HTML, CSS, and Javascript. Let's get started on your next project together."
+      data-react-helmet="true"
     />
+    <meta name="title" content="Web Developer" data-react-helmet="true" />
     <!-- CSS -->
     <link rel="stylesheet" href="/CSS/style.css" />
-
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- fontawesome -->
     <link
       rel="stylesheet"
@@ -31,9 +34,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap"
       rel="stylesheet"
     />
-    <title>San Antonio Web Developer</title>
     <!-- favicon -->
     <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+    <link rel="stylesheet" href="" />
+    <title>Ricardo Soria | San Antonio Web Developer</title>
   </head>
   <body>
     <!-- header -->
@@ -47,7 +51,7 @@
       <!-- start blobs -->
       <div class="row-outter">
         <h1 class="big-heading light-text fade-in-text">
-          I'm Ricardo <br />a Web Developer
+          I'm Ricardo, <br />a Web Developer
         </h1>
         <div>
           <a class="btn default animate-top" href="#portfolio">PORTFOLIO</a>
@@ -71,14 +75,18 @@
     <div class="slideshow-container">
       <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
-        <img class="skill-image" src="/images/github.png" />
+        <img class="skill-image" src="/images/github.png" alt="Github logo" />
         <div class="text">
           Dont worry, your code is safe. I know version control with GitHub.
         </div>
       </div>
 
       <div class="mySlides fade">
-        <img class="skill-image" src="/images/Bootstrap.png" />
+        <img
+          class="skill-image"
+          src="/images/Bootstrap.png"
+          alt="Bootstrap logo"
+        />
         <div class="text">
           I know some pretty cool libraries too. Like BootStrap, it helps me
           code a bit faster!
@@ -86,7 +94,7 @@
       </div>
 
       <div class="mySlides fade">
-        <img class="skill-image" src="/images/python.png" />
+        <img class="skill-image" src="/images/python.png" alt="Python logo" />
         <div class="text">
           Hey check it out I also know some Python, and currently playing with
           it's many libraries.
@@ -94,7 +102,11 @@
       </div>
 
       <div class="mySlides fade">
-        <img class="skill-image" src="/images/react-logo.png" />
+        <img
+          class="skill-image"
+          src="/images/react-logo.png"
+          alt="React logo"
+        />
         <div class="text">
           Oh yes, I also know some React. It really helps with creating
           interactive UIs.
@@ -102,7 +114,11 @@
       </div>
 
       <div class="mySlides fade">
-        <img class="skill-image" src="/images/wplogo.png" />
+        <img
+          class="skill-image"
+          src="/images/wplogo.png"
+          alt="Wordpress logo"
+        />
         <div class="text">
           Did you need something built with Wordpress? I can help with that too!
         </div>
@@ -567,11 +583,16 @@
       <h2 id="contact" class="contact-header">Let's Talk!</h2>
       <p class="contact-name">Ricardo T. Soria <br />"Rick"</p>
       <p class="contact-text">San Antonio, TX</p>
-      <!-- <p class="contact-text">ricardosoriadevelops@gmail.com</p> -->
 
       <a class="btn default contact-btn" href="/contactForm2/contact.html"
         >Contact Me</a
       >
+    </div>
+
+    <!-- End of Contact -->
+
+    <!-- Footer -->
+    <footer>
       <div>
         <a href="https://www.linkedin.com/in/ricardo-soria/" target="_blank"
           ><i class="social-icon fab fa-linkedin"></i
@@ -583,15 +604,16 @@
           ><i class="social-icon fab fa-instagram"></i
         ></a>
       </div>
-    </div>
-
-    <!-- End of Contact -->
-
-    <!-- Footer -->
-    <footer>&copy; RickSoria 2018-2021</footer>
+      &copy; RickSoria 2018-2021
+    </footer>
     <!-- <div>&copy; Ricardo Soria 2021</div> -->
     <!-- Footer End-->
 
+    <!-- Preloader Start -->
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <!-- Preloader END -->
     <!-- js script -->
     <script src="/JS/script.js"></script>
   </body>
