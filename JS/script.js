@@ -1,44 +1,3 @@
-// navbar hide with scroll
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function () {
-//   var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("myTopnav").style.top = "0";
-//   } else {
-//     document.getElementById("myTopnav").style.top = "-50px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// };
-
-// responsive navbar
-// function myFunction() {
-//   var x = document.getElementById("myTopnav");
-//   if (x.className === "navbar") {
-//     x.className += " responsive";
-//   } else {
-//     x.className = "navbar";
-//   }
-// }
-
-// skills slider
-// var slideIndex = 0;
-// carousel();
-
-// function carousel() {
-//   var i;
-//   var x = document.getElementsByClassName("mySlides");
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";
-//   }
-//   slideIndex++;
-//   if (slideIndex > x.length) {
-//     slideIndex = 1;
-//   }
-//   x[slideIndex - 1].style.display = "block";
-//   setTimeout(carousel, 3000);
-// }
-
-// Preload Start
 // Preload fade
 $(window).on("load", function () {
   $(".loader-wrapper").fadeOut("slow");
@@ -47,7 +6,7 @@ $(window).on("load", function () {
 // Preload End
 
 // Skills carousel Start
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -103,3 +62,29 @@ tabs.forEach((tab) => {
 });
 
 // Tabs End
+
+// Start Final Section
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function () {
+  $("#slideshow > div:first")
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo("#slideshow");
+}, 3000);
+// End Final Section
+
+// Start Final Section
+$("#slideshow-two > div:gt(0)").hide();
+
+setIntervalTwo(function () {
+  $("#slideshow-two > div:first")
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo("#slideshow-two");
+}, 3000);
+// End Final Section
