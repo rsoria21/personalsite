@@ -1,0 +1,336 @@
+/* CONTACT F3 */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background-image: radial-gradient(#332ba5, #0096db79, #1d1680);
+  background-size: 400%;
+  animation: bg-animation 500s infinite alternate;
+}
+h1 {
+  color: #ebebeb;
+}
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+/* navbar */
+.navbar {
+  border: 0.5px solid #ebebeb;
+  background-color: #0096db79;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  width: 90%;
+  z-index: 1;
+  border-radius: 5rem;
+  margin: 0 auto 7rem auto;
+  display: flex;
+  justify-content: center;
+  transition: top 0.3s;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.5s;
+}
+
+.navbar a:hover {
+  background-color: #00000079;
+  color: rgb(199, 199, 199);
+  border-radius: 3rem;
+}
+
+.navbar a.active {
+  color: white;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    width: 75%;
+  }
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* end of nav-bar */
+
+/* header */
+.header-container {
+  padding: 1.75rem 0;
+}
+.header-img {
+  background: radial-gradient(#332ba5, #0096db79, #1d1680);
+  background-size: 500%;
+  animation: bg-animation 500s infinite alternate;
+}
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+.big-heading {
+  position: relative;
+  margin: 0 auto;
+  font-size: 4.5rem;
+  color: #ebebeb;
+  text-align: center;
+  z-index: 1;
+}
+
+.fade-in-text {
+  animation: fadeIn linear 2.5s;
+  -webkit-animation: fadeIn linear 2.5s;
+  -moz-animation: fadeIn linear 2.5s;
+  -o-animation: fadeIn linear 2.5s;
+  -ms-animation: fadeIn linear 2.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* STart Blobs */
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.shape:nth-of-type(1) {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(
+    64deg,
+    #4856f3a9 23%,
+    #4856f3a9 23%,
+    #0d1edabd 80%
+  );
+  z-index: -1;
+  animation: wave 8s ease-in-out infinite;
+}
+
+.shape:nth-of-type(2) {
+  width: 800px;
+  height: 400px;
+  background: #7998ff;
+  position: absolute;
+  top: -200px;
+  left: -400px;
+  opacity: 0.9;
+  z-index: -1;
+  animation: wave 5s ease-in-out infinite;
+}
+.shape:nth-of-type(3) {
+  width: 250px;
+  height: 250px;
+  background: #379eff;
+  position: absolute;
+  bottom: 45%;
+  right: 15%;
+  z-index: -1;
+  opacity: 0.3;
+  animation: wave 12s ease-in-out infinite;
+}
+
+.shape:nth-of-type(4) {
+  width: 175px;
+  height: 175px;
+  background: #0317ac88;
+  position: absolute;
+  top: -8%;
+  right: 10%;
+  z-index: -1;
+  opacity: 0.4;
+  animation: wave 15s ease-in-out infinite;
+}
+.shape:nth-of-type(5) {
+  width: 50px;
+  height: 50px;
+  background: #007eec7d;
+  position: absolute;
+  top: 40%;
+  right: 65%;
+  opacity: 0.7;
+  z-index: -1;
+  transform: rotate(90deg);
+  animation: wave 15s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    border-radius: 66% 34% 37% 63% / 57% 31% 69% 43%;
+  }
+  50% {
+    border-radius: 26% 74% 51% 49% / 22% 53% 47% 78%;
+  }
+}
+/* End Blobs */
+/* Header END */
+
+/* START Quote */
+.intro-quote-text {
+  padding: 3rem 2rem;
+}
+.skill-logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1.75rem 0 15rem 0;
+}
+.left-quote {
+  /* background-color: red; */
+}
+.right-quote {
+  /* background-color: royalblue; */
+}
+/* START QUOTE TEXT */
+.quote-text {
+  padding: 2rem;
+  color: #ebebeb;
+}
+/* END QUOTE TEXT */
+
+/* START Buttons */
+.btn {
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.contact-btn {
+  font-size: 2rem;
+}
+
+.default {
+  border-color: #ebebeb;
+  border-radius: 3rem;
+  /* text-shadow: 0 0 2px #011520; */
+  color: #ebebeb;
+  background: #006da079;
+  margin: 0 5px;
+  transition: 0.5s;
+}
+
+.default:hover {
+  border-color: #ebebeb;
+  background: #00000079;
+  /* background-color: #006da079; */
+}
+
+@media screen and (max-width: 800px) {
+  .contact-btn {
+    font-size: 1rem;
+  }
+  .none {
+    display: none;
+  }
+}
+/* END Buttons */
+/* END Quote */
+
+/* Footer */
+footer {
+  background-image: linear-gradient(
+    #0096db,
+    #38ade4,
+    #4cb7e9,
+    #38ade4,
+    #0096db
+  );
+}
+
+.social-icon {
+  margin: 20px 10px;
+  color: #242424;
+}
+/* End of Footer */
