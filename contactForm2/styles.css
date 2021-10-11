@@ -237,17 +237,104 @@ body {
 /* End Blobs */
 /* Header END */
 
+/* DEMO START */
+.content {
+  width: 100%;
+  /* position: absolute; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* top: 20%; */
+}
+
+.left-col {
+  margin-left: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-text {
+  font-size: 3rem;
+  color: #fff;
+  /* line-height: 110px; */
+  /* float: left; */
+}
+
+.about-text {
+  color: #fff;
+}
+
+.skill-logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-logo {
+  width: 15%;
+  /* margin: 20px 20px 50px; */
+  margin: 0 20px;
+}
+
+.right-col {
+  float: right;
+  /* margin-right: 6%; */
+  /* margin-top: 120px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    flex-direction: column;
+  }
+  .left-col {
+    margin-left: 0;
+  }
+  .about-text {
+    margin: 0 4rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .btn-container {
+    flex-direction: row;
+  }
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .left-col {
+    margin-left: 0;
+    text-align: center;
+  }
+  .about-text {
+    margin: 2rem 2rem 0 2rem;
+  }
+}
+/* Demo END */
+
 /* Form Start */
-.container {
-  padding: 1.75rem 0 15rem 0;
+.form-container {
+  padding: 1.75rem 0;
+  margin: 0 5rem;
 }
 .contact-section {
-  background-color: rgba(206, 205, 199, 0.356);
+  text-align: center;
+  background-color: rgba(3, 26, 31, 0.42);
   border-radius: 2rem;
-  margin: 3rem 19rem 0 19rem;
+  /* margin: 3rem 19rem 0 19rem; */
+}
+.contact-logo {
+  width: 30%;
 }
 
 .contact-title {
+  text-align: center;
   margin-top: 100px;
   color: #fff;
   text-transform: uppercase;
@@ -255,6 +342,7 @@ body {
 }
 
 .contact-title h1 {
+  text-align: center;
   font-size: 32px;
   /* line-height: 10px; */
 }
@@ -270,6 +358,7 @@ form {
 
 .form-control {
   width: 600px;
+  padding-left: 12px;
   background: transparent;
   border: none;
   outline: none;
@@ -281,7 +370,7 @@ form {
 
 @media screen and (max-width: 1200px) {
   .contact-section {
-    margin: 3rem 11rem 0 11rem;
+    /* margin: 3rem 11rem 0 11rem; */
   }
   .form-control {
     width: 450px;
@@ -302,7 +391,7 @@ input {
 }
 
 form .submit {
-  background: #0579af79;
+  background: #0096db79;
   background-color: transparent;
   color: #fff;
   font-size: 20px;
@@ -313,7 +402,7 @@ form .submit {
 }
 
 form .submit:hover {
-  background-color: #006da079;
+  background-color: #0096db79;
   cursor: pointer;
 }
 /* FORM END */
