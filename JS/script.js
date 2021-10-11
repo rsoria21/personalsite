@@ -79,7 +79,7 @@ setInterval(function () {
 // Start Final Section
 $("#slideshow-two > div:gt(0)").hide();
 
-setIntervalTwo(function () {
+setInterval(function () {
   $("#slideshow-two > div:first")
     .fadeOut(1000)
     .next()
