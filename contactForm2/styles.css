@@ -318,6 +318,9 @@ body {
   .about-text {
     margin: 4.25rem 2rem 0 2rem;
   }
+  .skill-logo {
+    margin: 5px 10px;
+  }
 }
 /* Demo END */
 
