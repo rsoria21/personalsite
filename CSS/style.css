@@ -710,6 +710,7 @@ h3 {
   font-family: "Roboto Slab", serif;
 }
 .contact-text {
+  padding-bottom: 3rem;
   font-size: 1.3rem;
   color: #ebebeb;
   font-family: "Roboto Slab", serif;
@@ -749,7 +750,8 @@ h3 {
     flex: 100%;
   }
   .contact-container {
-    height: 118vh;
+    /* height: 118vh; */
+    height: 100vh;
   }
   .none {
     display: block;
