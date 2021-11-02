@@ -284,6 +284,12 @@ nav {
   .left-col {
     margin-left: 0;
   }
+  .title-text {
+    font-size: 75px;
+    color: #fff;
+    line-height: 110px;
+    float: left;
+  }
 }
 /* END CARD */
 
